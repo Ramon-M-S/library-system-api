@@ -1,5 +1,6 @@
 package com.ramon.library_system.controller;
 
+import com.ramon.library_system.dto.EmprestimoDTO;
 import com.ramon.library_system.entity.Emprestimo;
 import com.ramon.library_system.entity.Livro;
 import com.ramon.library_system.repository.EmprestimoRepository;
@@ -46,5 +47,5 @@ public class EmprestimoController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    record EmprestimoDTO(Long livroId, String nomeUsuario){}
+
 }
